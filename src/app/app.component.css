@@ -1,0 +1,17 @@
+.is-grouped {   
+    display: inline-block;
+}
+
+.is-grouped > .button:not(:last-child) {
+    margin-right: 10px;
+}
+.buy {
+    background-color: #f8890a;
+}
+.cart {
+    background-color: #eff31c;
+}
+.row {
+    border :1px solid black;
+    text-align: center;
+}

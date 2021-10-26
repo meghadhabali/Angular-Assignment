@@ -1,0 +1,28 @@
+<h1 style="text-align: center;">Get Your Favorite Fruit</h1>
+<hr/>
+
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let fruit of fruits"><img src="{{'../assets/images/' + fruit.p_name+'.jpg'}}" width="200px" height="200px">
+    <div><h1>{{fruit.p_name}}</h1>
+      <p>{{fruit.p_cost}} Rs/each</p>
+      <p> Stock : {{fruit.p_availability}}</p>
+      <p>{{fruit.p_details}}</p>
+      <p>{{fruit.p_category}}</p>
+      <div class='is-grouped'>
+        <button class='button buy'>Buy Now</button>
+        <button class='button cart'>Add to Cart</button>
+    </div>
+    </div>
+ </div>       
+</div>
+<br>
+<form>
+  <div class="form-group">
+    <label for="sel1">Select from list (select one):</label>
+    <select class="form-control" id="sel1">
+      <option>Select Fruit</option>
+      <option>Premium</option>
+      <option>Tamilnadu</option>
+    </select>        
+  </div>
+</form>
